@@ -1,0 +1,278 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:job_card_no",
+ "creation": "2024-09-06 17:06:55.155749",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_oqn4",
+  "amended_from",
+  "job_card_no",
+  "item_code",
+  "quantity",
+  "shree_process",
+  "column_break_ptku",
+  "date",
+  "bom",
+  "uom",
+  "vendor",
+  "section_break_zorh",
+  "no_of_touchpoints",
+  "column_break_gttw",
+  "rate_per_touchpoint",
+  "column_break_rznj",
+  "total_amount",
+  "received_section",
+  "table_receiving_details",
+  "section_break_smrk",
+  "total_received",
+  "vendor_address",
+  "column_break_etjc",
+  "total_due",
+  "remarks"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_oqn4",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Shree Job Card",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "job_card_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Job Card No",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "column_break_ptku",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "item_code",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Item Code",
+   "options": "Item",
+   "reqd": 1
+  },
+  {
+   "fieldname": "bom",
+   "fieldtype": "Link",
+   "label": "BOM",
+   "options": "BOM",
+   "reqd": 1
+  },
+  {
+   "fieldname": "uom",
+   "fieldtype": "Link",
+   "label": "UOM",
+   "options": "UOM",
+   "reqd": 1
+  },
+  {
+   "fieldname": "quantity",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Quantity",
+   "reqd": 1
+  },
+  {
+   "fieldname": "vendor",
+   "fieldtype": "Link",
+   "label": "Vendor",
+   "options": "Supplier",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_zorh",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "no_of_touchpoints",
+   "fieldtype": "Data",
+   "label": "No of Touchpoints"
+  },
+  {
+   "fieldname": "column_break_gttw",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "rate_per_touchpoint",
+   "fieldtype": "Data",
+   "label": "Rate per Touchpoint"
+  },
+  {
+   "fieldname": "column_break_rznj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "total_amount",
+   "fieldtype": "Data",
+   "label": "Total Amount",
+   "read_only": 1
+  },
+  {
+   "fieldname": "shree_process",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Shree Process",
+   "options": "Process",
+   "reqd": 1
+  },
+  {
+   "fieldname": "received_section",
+   "fieldtype": "Section Break",
+   "label": "Received"
+  },
+  {
+   "fieldname": "table_receiving_details",
+   "fieldtype": "Table",
+   "label": "Receiving Details",
+   "options": "Job Card Receive"
+  },
+  {
+   "fieldname": "section_break_smrk",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "total_received",
+   "fieldtype": "Data",
+   "label": "Total Received",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_etjc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "total_due",
+   "fieldtype": "Data",
+   "label": "Total Due",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "vendor.primary_address",
+   "fieldname": "vendor_address",
+   "fieldtype": "Long Text",
+   "label": "Vendor Address",
+   "read_only": 1
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Long Text",
+   "label": "Remarks"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-09-13 12:07:02.943915",
+ "modified_by": "Administrator",
+ "module": "SHREE RAKHI",
+ "name": "Shree Job Card",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "select": 1,
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Administrator",
+   "select": 1,
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Manufacturing Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Manufacturing User",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Stock Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Stock User",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

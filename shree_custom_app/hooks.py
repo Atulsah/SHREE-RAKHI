@@ -227,3 +227,14 @@ app_license = "mit"
 # 	"Logging DocType Name": 30  # days to retain logs
 # }
 
+fixtures = [
+		{"dt": "Custom Field", "filters": [
+				[
+					"name", "in", [
+						"Item-custom_category",
+						"Item-custom_sub_category",
+                        "Item-custom_item_url"
+					]
+			   ]
+	]}
+]
